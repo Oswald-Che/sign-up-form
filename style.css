@@ -1,12 +1,28 @@
+
 body{
   display: flex;
+  padding: 0px;
+  margin: 0px;
 }
 
 .logo{
   width: 700px;
 }
+
+.image-container{
+  height: 100vh;
+  background-color: lightgray;
+}
+
 .form{
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+.sidebar{
+  position: relative;
+  top: 20vh;
+  height: 150px;
+  width: 100%;
+  background-color: gray;
 }
