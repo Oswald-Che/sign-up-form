@@ -34,13 +34,18 @@ p{
   gap: 20px;
   justify-content: flex-end;
 }
+.inputs{
+  height: 40vh;
+  display: flex;
+  align-items: center;
+}
 
 fieldset{
   border: 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 10px;
+  gap: 15px;
   width: 50vw;
 }
 
@@ -55,8 +60,13 @@ fieldset{
   display: flex;
   flex-direction: column;
   gap: 5px;
+  
 }
-
+label{
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px grey;
+}
 .form{
   width: 100%;
   display: flex;
@@ -66,12 +76,21 @@ fieldset{
 input{
   height: 30px;
   width: 300px;
-  border: 1px solid gray;
+  border: 2px solid #E5E7EB;
   border-radius: 5px;
+  padding: 2px 2px 2px 8px;
+  font-size: 1.2rem;
+  font-weight: none;
 }
 
 input:focus{
   outline: none;
+  border: 2px solid  rgb(5, 153, 252);
+  box-shadow: 2px 2px 4px grey;
+}
+
+input:invalid{
+  border: 1px solid  red;
 }
 .sidebar{
   position: relative;
@@ -82,7 +101,7 @@ input:focus{
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .sidebar > div{
@@ -101,7 +120,13 @@ input:focus{
   background-color: lightgrey;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
+}
+
+.input-text{
+  font-size: 1.4rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
 }
 
 button{
