@@ -89,8 +89,13 @@ input:focus{
   box-shadow: 2px 2px 4px grey;
 }
 
+.error{
+  color: red;
+  font-size: 0.8rem;
+}
+
 input:invalid{
-  border: 1px solid  red;
+  border: 2px solid  red;
 }
 .sidebar{
   position: relative;
